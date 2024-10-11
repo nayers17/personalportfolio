@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nathan Ayers Portfolio</title>
+  
+  <!-- SEO Optimization -->
+  <meta name="description" content="Nathan Ayers Portfolio - Showcasing projects and skills in web development and software engineering.">
+  <meta name="keywords" content="Nathan Ayers, Portfolio, Web Developer, Software Engineer, Projects">
+  <meta name="author" content="Nathan Ayers">
+  
+  <!-- Structured Data Example -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Nathan Ayers",
+    "url": "https://your-custom-domain.com",
+    "sameAs": [
+      "https://github.com/your-repo",
+      "https://linkedin.com/in/yourprofile",
+      "mailto:email@example.com"
+    ],
+    "jobTitle": "Web Developer",
+    "description": "Nathan Ayers is a passionate developer specializing in web development and software engineering."
+  }
+  </script>
+  
+  <!-- Google Analytics -->
+  <!-- Replace 'YOUR_TRACKING_ID' with your actual Google Analytics Tracking ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'YOUR_TRACKING_ID');
+  </script>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
+
+  <!-- Navigation Bar -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Nathan Ayers</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <button id="theme-toggle" class="btn btn-secondary ms-3" aria-label="Toggle Dark Mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="vh-100 d-flex align-items-center" style="background-image: url('assets/images/hero-bg.jpg'); 
+      background-size: cover; background-position: center;">
+    <div class="container text-center text-white">
+      <h1 class="display-4">Welcome to My Portfolio</h1>
+      <p class="lead">I'm Nathan Ayers, a passionate developer.</p>
+      <a href="#projects" class="btn btn-primary btn-lg mt-3">View My Work</a>
+    </div>
+  </header>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-up">Projects</h2>
+      <div class="row">
+        <!-- Project Card 1 -->
+        <div class="col-md-4 mb-4" data-aos="zoom-in">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/images/project1.jpg" class="card-img-top" alt="Project 1" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Project 1</h5>
+              <p class="card-text">A brief description of Project 1 highlighting key features and technologies used.</p>
+              <div class="mt-auto">
+                <a href="https://github.com/your-repo" class="btn btn-outline-primary me-2" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">
+                  <i class="fas fa-eye"></i> View
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project Card 2 -->
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/images/project2.jpg" class="card-img-top" alt="Project 2" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Project 2</h5>
+              <p class="card-text">A brief description of Project 2 highlighting key features and technologies used.</p>
+              <div class="mt-auto">
+                <a href="https://github.com/your-repo" class="btn btn-outline-primary me-2" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2Modal">
+                  <i class="fas fa-eye"></i> View
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project Card 3 -->
+        <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+          <div class="card h-100 shadow-sm">
+            <img src="assets/images/project3.jpg" class="card-img-top" alt="Project 3" loading="lazy">
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Project 3</h5>
+              <p class="card-text">A brief description of Project 3 highlighting key features and technologies used.</p>
+              <div class="mt-auto">
+                <a href="https://github.com/your-repo" class="btn btn-outline-primary me-2" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project3Modal">
+                  <i class="fas fa-eye"></i> View
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more project cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-up">About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6" data-aos="fade-right">
+          <img src="assets/images/profile.jpg" class="img-fluid rounded" alt="Nathan Ayers" loading="lazy">
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <p>Hello! I'm Nathan Ayers, a passionate developer specializing in web development and software engineering. 
+          I enjoy building dynamic and responsive websites, crafting efficient APIs, and continuously learning new technologies.</p>
+          <p>When I'm not coding, I love exploring the outdoors, reading tech blogs, and contributing to open-source projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section (Optional) -->
+  <section id="testimonials" class="bg-light py-5">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-up">Testimonials</h2>
+      <div class="row">
+        <div class="col-md-6 mb-4" data-aos="fade-right">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <p class="card-text">"Nathan is a highly skilled developer who delivered our project on time and exceeded expectations."</p>
+              <h5 class="card-title">- Jane Doe, CEO of TechCorp</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4" data-aos="fade-left">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <p class="card-text">"Working with Nathan was a pleasure. His attention to detail and problem-solving skills are top-notch."</p>
+              <h5 class="card-title">- John Smith, Project Manager at InnovateX</h5>
+            </div>
+          </div>
+        </div>
+        <!-- Add more testimonials as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="fade-up">Contact</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8" data-aos="fade-up" data-aos-delay="100">
+          <form id="contactForm" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+              <div class="invalid-feedback">
+                Please enter your name.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+              <div class="invalid-feedback">
+                Please enter a valid email address.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Your message..." required></textarea>
+              <div class="invalid-feedback">
+                Please enter your message.
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container text-center">
+      <p>&copy; 2024 Nathan Ayers. All rights reserved.</p>
+      <div>
+        <a href="https://github.com/your-repo" class="text-white me-3" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-2x"></i></a>
+        <a href="https://linkedin.com/in/yourprofile" class="text-white me-3" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="mailto:email@example.com" class="text-white" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope fa-2x"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project 1 Modal -->
+  <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="project1ModalLabel">Project 1 Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/project1-detail.jpg" class="img-fluid mb-3" alt="Project 1" loading="lazy">
+          <p>Detailed description of Project 1, including features, technologies used, challenges faced, and solutions implemented.</p>
+          <ul>
+            <li><strong>Technology:</strong> HTML, CSS, JavaScript, Bootstrap</li>
+            <li><strong>Features:</strong> Responsive Design, Interactive UI, API Integration</li>
+            <li><strong>Live Demo:</strong> <a href="https://your-live-demo.com" target="_blank" rel="noopener noreferrer">View Live</a></li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a href="https://github.com/your-repo" class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 2 Modal -->
+  <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="project2ModalLabel">Project 2 Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/project2-detail.jpg" class="img-fluid mb-3" alt="Project 2" loading="lazy">
+          <p>Detailed description of Project 2, including features, technologies used, challenges faced, and solutions implemented.</p>
+          <ul>
+            <li><strong>Technology:</strong> HTML, CSS, JavaScript, React</li>
+            <li><strong>Features:</strong> Single Page Application, Dynamic Routing, State Management</li>
+            <li><strong>Live Demo:</strong> <a href="https://your-live-demo.com" target="_blank" rel="noopener noreferrer">View Live</a></li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a href="https://github.com/your-repo" class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project 3 Modal -->
+  <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="project3ModalLabel">Project 3 Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="assets/images/project3-detail.jpg" class="img-fluid mb-3" alt="Project 3" loading="lazy">
+          <p>Detailed description of Project 3, including features, technologies used, challenges faced, and solutions implemented.</p>
+          <ul>
+            <li><strong>Technology:</strong> Node.js, Express, MongoDB</li>
+            <li><strong>Features:</strong> RESTful API, User Authentication, Data Visualization</li>
+            <li><strong>Live Demo:</strong> <a href="https://your-live-demo.com" target="_blank" rel="noopener noreferrer">View Live</a></li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <a href="https://github.com/your-repo" class="btn btn-outline-primary" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  
+  <!-- Custom JS -->
+  <script src="scripts/main.js"></script>
+  
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 800, // Animation duration
+      once: true, // Whether animation should happen only once
+    });
+  </script>
+</body>
+</html>
